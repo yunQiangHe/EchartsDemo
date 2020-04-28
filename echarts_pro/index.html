@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Echarts数据可视化</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>可视化展板-ECharts</h1>
+        <div class="showTime"></div>
+        <script>
+            function getTime() {
+                let date = new Date();
+                let time = `当前时间：${date.getFullYear()}年${date.getMonth() + 1}月${date.getDate()}日-${date.getHours()}时${date.getMinutes()}分${date.getSeconds()}秒`;
+                return time;
+            }
+            let showTime = document.querySelector(".showTime");
+            // let showTime = document.getElementsByClassName('showTime')[0];
+            setInterval(() => {
+                // console.log(getTime());
+                showTime.innerHTML = getTime();
+            }, 1000)
+        </script>
+    </header>
+
+    <section class="mianbox">
+        <div class="cloumn">
+            <div class="panel">
+                <h2>柱状图-就业行业 </h2>
+                <div class="chart"></div>
+                <div class="panel-footer"></div>
+            </div>
+            <div class="panel">
+                <h2>柱状图-就业行业 </h2>
+                <div class="chart"></div>
+                <div class="panel-footer"></div>
+            </div>
+            <div class="panel">
+                <h2>柱状图-就业行业 </h2>
+                <div class="chart"></div>
+                <div class="panel-footer"></div>
+            </div>
+        </div>
+
+        <div class="cloumn">
+            <div class="no">
+                <div class="no-hd">
+                    <ul>
+                        <li>12345</li>
+                        <li>555555</li>
+                    </ul>
+                </div>
+                <div class="no-bd">
+                    <ul>
+                        <li>前端需求人数</li>
+                        <li>市场供应人数</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="map">
+                <div class="chart"></div>
+                <div class="map1"></div>
+                <div class="map2"></div>
+                <div class="map3"></div>
+            </div>
+        </div>
+
+        <div class="cloumn">
+            <div class="panel">
+                <h2>柱状图-就业行业 </h2>
+                <div class="chart"></div>
+                <div class="panel-footer"></div>
+            </div>
+            <div class="panel">
+                <h2>柱状图-就业行业 </h2>
+                <div class="chart"></div>
+                <div class="panel-footer"></div>
+            </div>
+            <div class="panel">
+                <h2>柱状图-就业行业 </h2>
+                <div class="chart"></div>
+                <div class="panel-footer"></div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./js/flexible.js"></script>
+</body>
+
+</html>
