@@ -237,10 +237,14 @@ header .showTime {
   line-height: 0.6rem;
   color: #fff;
   text-align: center;
-  font-size: 20px;
+  font-size: 0.25rem;
   font-weight: 400;
+}
+.mianbox .cloumn .panel h2 a {
+  color: #fff;
+  margin: 0 0.1875rem;
+  text-decoration: underline;
 }
 .mianbox .cloumn .panel .chart {
   height: 3rem;
-  background: pink;
 }
