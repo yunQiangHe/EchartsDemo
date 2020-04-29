@@ -358,6 +358,7 @@
         myChart.resize();
     });
 })();
+
 // 折线图-播放量
 (function() {
     // 基于准备好的dom，初始化echarts实例
@@ -619,7 +620,8 @@
         myChart.resize();
     });
 })();
-//#endregion
+
+
 // 点位分布统计模块
 (function() {
     // 1. 实例化对象
